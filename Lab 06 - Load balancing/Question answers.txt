@@ -1,0 +1,35 @@
+Server 1 - m3.nano
+Server 2 - m1.xsmall
+
+Question 1: How much percent of your generated user requests ended up visiting each of your servers? (Total count of user requests sent to each application server can be seen by opening the application server on the browser or by opening the load balancer on the web and then calculating the percent based on total requests sent from locust)
+
+	Each server gets 50% of the requests. Requests get distributed across the upstream servers equally.
+
+Question 2: How much percent of your generated user requests ended up visiting each of your servers and why?
+
+	Server 1 gets 33.(3)% requests and Server 2 gets 66.(6)% requets. 
+	Assigning weights 1 and 2 means every 3 new requests will be distributed across the application instances as the following: 1 request will be directed to server 1, and two requests will go to server 2.
+	
+Question 3: What is the CPU load value on both instances? What does this indicate in regard to the performance of these cloud instance types?
+
+	Both instances' CPU load is about 90%, meaning both of these cloud instances are at a limit, and the system should be scaled up to handle more requests.
+	
+Question 4: When using the least_conn; load balancing strategy, what percent of user requests are sent to the first and second application servers?
+
+	Server 1 gets 66% of requests, and server 2 gets 34% of requests.
+
+Question 5: Which of these instances is more capable in terms of responding to user requests? Download the test report from locust UI and name it as "Task6_5_least_conn".
+
+	Server 1 is more capable in terms of responding to user requests. This can be derived from question 4.
+	That's expected because m3 has newer hardware than m1.
+
+Question 6: Which technique has the overall minimum, maximum, and moderate response time? why is it so?
+
+	Least Connections has an overall moderate response time
+	Round Robin has the lowest min response time because the more capable server can finish processing tasks while it waits for the less capable server. 
+		Min response time is lower than Least Connections because it doesn't have to check the number of active connections.
+	Weighted Round Robin has the overall highest response time because a less capable server was assigned a higher weight.
+	
+	Least Connections: 		average 1081, min 68, max 2860 (ms)
+	Round Robin:			average 1888, min 43, max 5720 (ms)
+	Weighted Round Robin:	average 2895, min 44, max 5823 (ms)

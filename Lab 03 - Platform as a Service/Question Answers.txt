@@ -1,0 +1,16 @@
+How long does it take for Azure to update the running application after you commit changes?
+
+About 1 min 30 sec (measured 2 times)
+
+
+
+Url:
+
+Task 3.1
+https://kadalipp.azurewebsites.net
+
+Task 3.2
+https://kadalipplab3task32.azurewebsites.net
+
+Task 3.3 and 3.4
+https://lab3task331v2.azurewebsites.net

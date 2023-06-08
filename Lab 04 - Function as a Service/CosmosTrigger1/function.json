@@ -1,0 +1,22 @@
+﻿{
+  "bindings": [
+    {
+      "type": "cosmosDBTrigger",
+      "name": "documents",
+      "direction": "in",
+      "leaseCollectionName": "leases",
+      "connectionStringSetting": "kadalipplab4cosmos_DOCUMENTDB",
+      "databaseName": "messagesdb",
+      "collectionName": "messages",
+      "createLeaseCollectionIfNotExists": true
+    },
+    {
+      "name": "message",
+      "accountSidSetting": "TwilioAccountSid",
+      "authTokenSetting": "TwilioAuthToken",
+      "from": "+12762862039",
+      "direction": "out",
+      "type": "twilioSms"
+    }
+  ]
+}

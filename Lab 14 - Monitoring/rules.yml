@@ -1,0 +1,17 @@
+groups:
+ - name: test
+   rules:
+   - alert: InstanceDown
+     expr: up == 0
+     for: 1m
+     labels:
+       name: Kadalipp_Node_Exporter
+     annotations:
+       summary: Node Exporter running in {{$labels.instance}} is down.
+   - alert: CPU OverUtilzation
+     expr: ((1 - avg(irate(node_cpu_seconds_total{mode="idle"}[10m])) by (instance)) * 100) > 50
+     for: 1m
+     labels:
+       name: Kadalipp_Node_Exporter
+     annotations:
+       summary: CPU utilization of the node {{$labels.instance}} had reached the threshold.

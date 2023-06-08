@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { display: flex; flex-direction: column; align-items: center }
+        .real-location {color:green; }
+        .through-lb {color:blue; }
+        .direct { color: red; }
+        h2 { color:#0058a1 }
+        table { border-spacing: 5px;}
+    </style>
+    <title>Cloud Computing Lab 6</title>
+</head>
+<body>
+    <h1>Kaspar Kadalipp Server 2</h1>
+    <a href = "https://mc.cs.ut.ee/"><img src="https://mc.cs.ut.ee/wp-content/uploads/2020/01/logo.png"/></a>
+    <h2> Simple load balancing tracker</h2>
+    <h1><b>Recorded page visits on Application Server with host IP address: {{server_addr}}</b></h1>
+    <table>
+        <tr><th>Source IP</th><th>Count</th><th></th></tr>
+        {% for address in addresses %}
+        <tr class="{{address.html_class}}">
+            <td>{{address.ip}}</td><td>{{address.hits}}</td><td> {{address.message}} </td>
+        </tr >
+        {% endfor %}
+    </table>
+
+    <p style="font-size:0.75em"><i>(NB! Connections through a load balancer are counted twice, once for the source location and once for load balancer)</i></p>
+
+    <div><button onClick="location.reload(true)">Reload Page</button></div>
+
+    <p style="word-wrap: break-word; inline-size: 80%;">𝝅 = {{pi}}</p>
+</body>
+</html>

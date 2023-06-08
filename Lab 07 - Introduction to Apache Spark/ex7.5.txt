@@ -1,0 +1,34 @@
+23/03/24 16:51:26 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+('file:///C:/Users/kaspa/PycharmProjects/pythonProject/books/pg33573.txt', "Project Gutenberg's The Progressionists, and Angela., by Conrad von Bolanden")
+('file:///C:/Users/kaspa/PycharmProjects/pythonProject/books/pg33573.txt', '')
+('file:///C:/Users/kaspa/PycharmProjects/pythonProject/books/pg33573.txt', 'This eBook is for the use of anyone anywhere at no cost and with')
+('file:///C:/Users/kaspa/PycharmProjects/pythonProject/books/pg33573.txt', 'almost no restrictions whatsoever.  You may copy it, give it away or')
+('file:///C:/Users/kaspa/PycharmProjects/pythonProject/books/pg33573.txt', 're-use it under the terms of the Project Gutenberg License included')
+C:\Users\kaspa\PycharmProjects\pythonProject\venv\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\shuffle.py:60: UserWarning: Please install psutil to have better support with spilling
+[Stage 1:>                                                          (0 + 5) / 5]C:\Users\kaspa\PycharmProjects\pythonProject\venv\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\shuffle.py:60: UserWarning: Please install psutil to have better support with spilling
+C:\Users\kaspa\PycharmProjects\pythonProject\venv\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\shuffle.py:60: UserWarning: Please install psutil to have better support with spilling
+C:\Users\kaspa\PycharmProjects\pythonProject\venv\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\shuffle.py:60: UserWarning: Please install psutil to have better support with spilling
+C:\Users\kaspa\PycharmProjects\pythonProject\venv\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\shuffle.py:60: UserWarning: Please install psutil to have better support with spilling
+[Stage 1:===============================================>           (4 + 1) / 5]C:\Users\kaspa\PycharmProjects\pythonProject\venv\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\shuffle.py:60: UserWarning: Please install psutil to have better support with spilling
+[Stage 2:>                                                          (0 + 5) / 5]C:\Users\kaspa\PycharmProjects\pythonProject\venv\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\shuffle.py:60: UserWarning: Please install psutil to have better support with spilling
+C:\Users\kaspa\PycharmProjects\pythonProject\venv\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\shuffle.py:60: UserWarning: Please install psutil to have better support with spilling
+C:\Users\kaspa\PycharmProjects\pythonProject\venv\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\shuffle.py:60: UserWarning: Please install psutil to have better support with spilling
+C:\Users\kaspa\PycharmProjects\pythonProject\venv\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\shuffle.py:60: UserWarning: Please install psutil to have better support with spilling
+[Stage 2:===============================================>           (4 + 1) / 5]C:\Users\kaspa\PycharmProjects\pythonProject\venv\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\shuffle.py:60: UserWarning: Please install psutil to have better support with spilling
+[Stage 3:>                                                          (0 + 5) / 5]C:\Users\kaspa\PycharmProjects\pythonProject\venv\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\shuffle.py:60: UserWarning: Please install psutil to have better support with spilling
+C:\Users\kaspa\PycharmProjects\pythonProject\venv\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\shuffle.py:60: UserWarning: Please install psutil to have better support with spilling
+C:\Users\kaspa\PycharmProjects\pythonProject\venv\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\shuffle.py:60: UserWarning: Please install psutil to have better support with spilling
+C:\Users\kaspa\PycharmProjects\pythonProject\venv\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\shuffle.py:60: UserWarning: Please install psutil to have better support with spilling
+[Stage 3:===============================================>           (4 + 1) / 5]                                                                                C:\Users\kaspa\PycharmProjects\pythonProject\venv\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\shuffle.py:60: UserWarning: Please install psutil to have better support with spilling
+[Stage 6:>                                                          (0 + 5) / 5]C:\Users\kaspa\PycharmProjects\pythonProject\venv\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\shuffle.py:60: UserWarning: Please install psutil to have better support with spilling
+C:\Users\kaspa\PycharmProjects\pythonProject\venv\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\shuffle.py:60: UserWarning: Please install psutil to have better support with spilling
+C:\Users\kaspa\PycharmProjects\pythonProject\venv\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\shuffle.py:60: UserWarning: Please install psutil to have better support with spilling
+C:\Users\kaspa\PycharmProjects\pythonProject\venv\Lib\site-packages\pyspark\python\lib\pyspark.zip\pyspark\shuffle.py:60: UserWarning: Please install psutil to have better support with spilling
+                                                                                file:///C:/Users/kaspa/PycharmProjects/pythonProject/books/pg44287.txt [('the', 6653), ('of', 3617), ('and', 3035), ('a', 1925), ('to', 1730)]
+file:///C:/Users/kaspa/PycharmProjects/pythonProject/books/pg9191.txt [('the', 3795), ('to', 2140), ('and', 2083), ('of', 1956), ('a', 1944)]
+file:///C:/Users/kaspa/PycharmProjects/pythonProject/books/pg26209.txt [('a', 2732), ('the', 2672), ('of', 2668), ('and', 2551), ('in', 1235)]
+file:///C:/Users/kaspa/PycharmProjects/pythonProject/books/pg33573.txt [('the', 8056), ('of', 4341), ('and', 3419), ('to', 2987), ('a', 2510)]
+file:///C:/Users/kaspa/PycharmProjects/pythonProject/books/pg32810.txt [('the', 215), ('of', 133), ('and', 112), ('to', 97), ('a', 87)]

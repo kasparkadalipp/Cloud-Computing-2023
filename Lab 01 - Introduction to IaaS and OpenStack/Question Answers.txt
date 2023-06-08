@@ -1,0 +1,17 @@
+What happens if you lose your ssh KeyPair file? What happens to 
+existing instances which were started with the lost ssh key?
+
+By losing my private SSH key I would no longer be able to access 
+existing instances that were started using my public key if I didn’t
+have any other means to access them.
+
+
+
+What are the advantages of utilizing cloud Volumes? Briefly describe 
+at least two scenarios, where using volumes simplifies working with 
+cloud instances.
+
+1. Multi-instance storage - volumes can be used to store data that
+are shared between multiple instances.
+2. Data persistence - volumes retain data after an instance is 
+terminated, making it easier to preserve important data.

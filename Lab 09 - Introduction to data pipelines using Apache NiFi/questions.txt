@@ -1,0 +1,18 @@
+1. Which of the available NiFi processors looks most interesting or useful to you (which was NOT covered in this lab). 
+Why do you find it interesting or useful?
+
+ExecuteScript, it allows to execute custom scripts written in Python, Javascrpt, Lua, etc.
+I can write custom scripts to perform complex data processing tasks that may not be possible with other built-in processors.
+
+
+
+2. Explain what is copy-on-write paradigm that NiFi Content Repository uses.
+
+When a change is made to a FlowFile, NiFi makes a copy of the original FlowFile's content. All modifications are done one the copy. 
+This ensures that the original FlowFile remains unchanged and that all provenance events that reference it still point to the correct content.
+The copy operation is deferred until the first write.
+
+Why is copy-on-write useful when dealing with large amount of streaming data?
+
+If a resource is duplicated but not modified, it is not necessary to create a new resource. The resource can be shared between the copy and the original.
+When multiple processors need to access and modify the same data, copy-on-write allows them to do so without interfering with each other's operations. 
